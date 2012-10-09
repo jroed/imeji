@@ -11,9 +11,6 @@
 	<groupId>de.mpg.mpdl.imeji</groupId>
 	<version>1.0.0.1-SNAPSHOT</version>
 	<scm>
-		<connection>scm:git:git://github.com/imeji-community/imeji.git</connection>
-		<developerConnection>scm:git:https://github.com/imeji-community/imeji.git</developerConnection>
-		<url>https://github.com/imeji-community/imeji.git</url>
 	</scm>
 
 	<build>
