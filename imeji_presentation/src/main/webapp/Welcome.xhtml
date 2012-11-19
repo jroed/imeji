@@ -44,7 +44,7 @@
 				<!-- Main Content -->
 				
 				
-				<div id="welcomeInfo" class="imj_cont_2_5 imj_welcomeInfo" style="float:left;">
+				<div id="welcomeInfo" class="imj_cont_2_5 imj_welcomeInfo" style="float:left; border:1px dotted #A1A6B0; padding:5px;text-align:justify">
 					<style type="text/css">
 						img {
 							border:0 none;
@@ -70,7 +70,7 @@
 							width:39.85%;
 						}
 						.imj_cont_3_5 {
-							width:59.85%;
+							width:49.85%; /* changed by JR from 59.85% */
 						}
 						.imj_welcomeInfo {
 							min-height:34.8333333em;
@@ -89,7 +89,7 @@
 							padding:1%;
 							display:inline;
 							font-size:1.0909em;
-							background-color:#323232;
+							background-color:#EEEEEE;
 							border-radius:0.41666666em;
 							-webkit-border-radius:0.41666666em;
 							-moz-border-radius:0.41666666em;
@@ -102,18 +102,33 @@
 							overflow:auto;
 							font-size:1.0909em;
 						}
+						
 						.imj_welcomeInfo .id_tabs li.ui-state-active {
-							background-color:#383838;
-							color:#F0F0F0;
+							background-color:#00248E;
+							color:#FFFFFF;
 						}
+						
 						.imj_welcomeInfo .id_tabs li.ui-state-active a {
-							color:#F0F0F0;
+							background-color:#00248E;
+							color:#FFFFFF;							
 						}
+						
+						/* added by JR */
+						.imj_welcomeInfo .id_tabs li.ui-state-hover {
+							background-color:#183668;
+							color:#FFFFFF;
+						}
+						
+						/* added by JR */
+						.imj_welcomeInfo .id_tabs li.ui-state-hover a {
+							background-color:#183668;
+							color:#FFFFFF;							
+						}						
+												
 						.imj_welcomeInfo .id_tabs div.ui-tabs-hide {
 							display:none;
 						}
-						
-						
+												
 						.imj_startpage_carousel {
 							min-height:33.333333em; 
 							overflow:hidden;
@@ -131,7 +146,7 @@
 						.dynamicCloudinfo {
 							position:absolute;
 							z-index:5600;
-							background-color:#292929;
+							background-color:#FFFFFF;
 							padding:0.75em;
 						}
 						.imj_startpage_carousel #title-text {
@@ -186,45 +201,45 @@
 						</h:panelGroup>
 						
 						<h:panelGroup layout="block" id="tabsEN-2" styleClass="imj_cont_1 tab_content" style="overflow:hidden;">
-							<a class="twitter-timeline" href="https://twitter.com/imeji_org" data-widget-id="245097651257876480">Tweets von @imeji_org</a>
+							<a class="twitter-timeline" href="https://twitter.com/imeji_org" data-widget-id="245097651257876480">Tweets from @imeji_org</a>
 							<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
 						</h:panelGroup>
 						
 						<h:panelGroup layout="block" id="tabsEN-3" styleClass="imj_cont_1 tab_content" >
-							<p><b>imeji visitors (not logged in): </b></p>
+							<p><b>Visitors (not logged in): </b></p>
 								<li>
 									  &nbsp;View collection list <a href="#{Navigation.applicationUrl}help#2.2._Collection_List" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		 </a>
 								</li> 
 								<li>  &nbsp;View album list <a href="#{Navigation.applicationUrl}help#3.2._Album_List" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Search in collections <a href="#{Navigation.applicationUrl}help#4._Search" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<br/><br/>
-							<p><b>imeji users (logged in): </b></p>
+							<p><b>Users (logged in): </b></p>
 								<li>  &nbsp;Create a collection <a href="#{Navigation.applicationUrl}help#2.1._Create_Collection" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Upload pictures <a href="#{Navigation.applicationUrl}help#2.4._Manage_Collection" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Create a metadata profile <a href="#{Navigation.applicationUrl}help#2.3._Create_Metadata_Profile" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Organize images in albums <a href="#{Navigation.applicationUrl}help#3.1._Create_Album" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Share albums with coworkers <a href="#{Navigation.applicationUrl}help#3.6._Share_Album" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 						</h:panelGroup>
@@ -263,38 +278,38 @@
 							<p><b>imeji Besucher (nicht angemeldet): </b></p>
 								<li>
 									  &nbsp;Sammlungen ansehen 	<a href="#{Navigation.applicationUrl}help#2.2._Collection_List" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		 </a>
 								</li> 
 								<li>  &nbsp;Alben ansehen <a href="#{Navigation.applicationUrl}help#3.2._Album_List" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Suchen in Sammlungen <a href="#{Navigation.applicationUrl}help#4._Search" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<br/>
 								<br/>
 							<p><b>imeji Nutzer (angemeldet): </b></p>
 								<li>  &nbsp;Sammlungen erstellen <a href="#{Navigation.applicationUrl}help#2.1._Create_Collection" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Bilder hochladen <a href="#{Navigation.applicationUrl}help#2.4._Manage_Collection" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Ein Metadaten Profil erstellen <a href="#{Navigation.applicationUrl}help#2.3._Create_Metadata_Profile" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Alben erstellen <a href="#{Navigation.applicationUrl}help#3.1._Create_Album" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;Teilen von Alben <a href="#{Navigation.applicationUrl}help#3.6._Share_Album" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 						</h:panelGroup>
@@ -331,37 +346,37 @@
 							<p><b>閲覧者向けリンク (非ログイン時): </b></p>
 									<li>
 									  &nbsp;コレクション一覧を見る <a href="#{Navigation.applicationUrl}help#2.2._Collection_List" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		 </a>
 								</li> 
 								<li>  &nbsp;アルバム一覧を見る <a href="#{Navigation.applicationUrl}help#3.2._Album_List" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;コレクション全体を検索する <a href="#{Navigation.applicationUrl}help#4._Search" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<br/><br/>
 							<p><b>Imeji登録利用者 (ログイン時): </b></p>
 								<li>  &nbsp;コレクションを作る <a href="#{Navigation.applicationUrl}help#2.1._Create_Collection" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;画像をアップロードする <a href="#{Navigation.applicationUrl}help#2.4._Manage_Collection" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;メタデータ構造を新規作成する <a href="#{Navigation.applicationUrl}help#2.3._Create_Metadata_Profile" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;アルバム内の画像を編集する <a href="#{Navigation.applicationUrl}help#3.1._Create_Album" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 								<li>  &nbsp;アルバム画像を共有する <a href="#{Navigation.applicationUrl}help#3.6._Share_Album" target="_blank"> 
-															<img alt="help - search" src="#{Navigation.applicationUrl}resources/icon/All_Paginator_ArrowNext_15_Deactivated.gif"/> 
+															<img alt="help - search" src="#{Navigation.domain}common/resources/cssFramework/themes/skin_zuse/images/All_Paginator_ArrowNext_15_Active.png"/> 
 												 		  </a> 
 								</li>
 						</h:panelGroup>
@@ -394,13 +409,9 @@
 				<div class="clear imj_cont_1 imj_footer small_negMarginLExcl">
 				<!-- begin: footer section-->
 					<div class="imj_cont_1 imj_poweredby">
-						<a href="http://colab.mpdl.mpg.de/mediawiki/Imeji-Community" target="_blank"> 
+						<a class="transimage" href="http://colab.mpdl.mpg.de/mediawiki/Imeji-Community" target="_blank"> 
 							<img alt="imeji community logo" width="150em" style="background-color:#ffffff; -moz-border-radius: 7px; border-radius: 7px; padding:1%; margin-right:5%;" src="http://imeji.org/Imeji-Community.png"/> 
 						</a> 
-						<br/><br/>
-						<a href="http://www.escidoc.org/" target="_blank"> 
-							<img alt="eSciDoc logo" src="https://zim02.gwdg.de/repos/faces/trunk/faces/faces_static/images/escidoc_new.png" height="32em"/> 
-						</a>
 					</div>
 				<!-- end: footer section -->
 				</div>
@@ -473,7 +484,7 @@
 					jQuery(".quickSearchTextInput").attr("placeholder", placeholder_simpleSearch);
 					
 					//delete the page title on welcome page
-					jQuery("div#contentSkipLinkAnchor.headLine").remove();
+					//jQuery("div#contentSkipLinkAnchor.headLine").remove(); //removed by JR
 					
 					//initialize the tab menu and carousel
 					initStartpage();
