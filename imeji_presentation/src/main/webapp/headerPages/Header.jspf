@@ -33,9 +33,7 @@
              */
 -->
 </ui:remove>
-
 	<f:subview id="Header">
-	
 		<!-- start: skip link navigation -->
 		<h:outputLink id="lnkSkipMainMenu" styleClass="skipLink" title="#{lbl.skip_to_mainMenu}" value="#mainMenuSkipLinkAnchor">
 			<h:outputText value="#{lbl.skip_to_mainMenu}"/>
@@ -68,8 +66,11 @@
 				<ui:include src="ui/SearchMenu.jspf"/>
 		
 			</div>
-		
+			
 			<!-- import main menu here -->
+			<h:outputText escape="false">
+			<br /> <br /><br /><br /><br /><br /><br /><br />	
+			</h:outputText>
 			<ui:include src="ui/MainMenu.jspf"/>
 			
 		<!-- end: header section -->
