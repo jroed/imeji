@@ -52,13 +52,16 @@
 			<h:outputText value="#{lbl.header_collections}"></h:outputText>
 		</h:outputLink>
 		<h:outputText id="lnkCollectionsInactive" styleClass="free_area0" value="#{lbl.header_collections}" rendered="#{HistorySession.currentPage.type.fileName == 'Collections.xhtml'}" />
-		
-		
+				
 		<h:outputLink id="lnkAlbums" styleClass="free_area0" title="#{lbl.goto_albums}" value="#{Navigation.albumsUrl}?page=1" rendered="#{HistorySession.currentPage.type.fileName != 'Albums.xhtml'}">
 			<h:outputText value="#{lbl.header_albums}"></h:outputText>
 		</h:outputLink>
 		<h:outputText id="lnkAlbumssInactive" styleClass="free_area0" value="#{lbl.header_albums}" rendered="#{HistorySession.currentPage.type.fileName == 'Albums.xhtml'}" />
 		
+		<h:outputLink id="lnkZuseZuse" styleClass="free_area0" title="#{lbl.zuse_menu_konrad_zuse}" value="#{Navigation.zuseUrl}" rendered="#{HistorySession.currentPage.type.fileName != 'ZuseZuse.xhtml'}">
+			<h:outputText value="#{lbl.zuse_menu_konrad_zuse}"></h:outputText>
+		</h:outputLink>
+		<h:outputText id="lnkZuseZuseInactive" styleClass="free_area0" value="#{lbl.zuse_menu_konrad_zuse}" rendered="#{HistorySession.currentPage.type.fileName == 'ZuseZuse.xhtml'}" />
 		
 		<h:outputLink id="lnkAdmin" title="#{lbl.goto_admin}" value="#{Navigation.applicationUrl}jsf/UserAdministrationPage.xhtml" rendered="#{SessionBean.admin}">
 			<h:outputText value="ADMIN"></h:outputText>

@@ -159,5 +159,11 @@
 	</url-mapping>
 
 
+	<!-- Zuse specifics -->
+	<url-mapping id="zuseZuse">
+		<pattern value="/zuseZuse" />
+		<view-id>/jsf/ZuseZuse.xhtml</view-id>
+	</url-mapping>
+
 
 </pretty-config>

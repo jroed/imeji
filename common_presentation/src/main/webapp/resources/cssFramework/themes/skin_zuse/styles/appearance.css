@@ -63,9 +63,23 @@ COLOR 4C4C4C was changed to 3C3C3C; - 2011-03-28
 		padding-left: 0em !important;
 	}*/
 
+	/* TEXT SIZE */
+
+/*  body {
+		font-size: 12px !important;
+	}
+
+	label, select, textarea, button, input, a, a.visited {
+		font-size: 13px !important;
+	} */
+	
 	/*HEADER LOGO*/
 
-	.headerLogo, .themePark {
+	.headerLogo {
+		height: 100px !important;
+	}
+	
+	.LogoNSearch {
 		height: 100px !important;
 	}
 
@@ -103,7 +117,7 @@ COLOR 4C4C4C was changed to 3C3C3C; - 2011-03-28
 	}*/
 	
 	.mainMenu input, .mainMenu a, .mainMenu span {
-	font-size: 18px !important;
+	font-size: 19px !important;
 	font-weight: bold !important;
 	}
 

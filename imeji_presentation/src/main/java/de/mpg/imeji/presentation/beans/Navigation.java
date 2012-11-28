@@ -43,6 +43,10 @@ public class Navigation
     public final Page INFOS = new Page("Info", "infos");
     public final Page CREATE = new Page("Create", "create");
     public final Page UPLOAD = new Page("Upload collection", "upload");
+
+    // Zuse specifics
+    public final Page ZUSE = new Page("Zuse", "zuseZuse");
+    
     // session
     private SessionBean sessionBean = null;
 
@@ -242,6 +246,12 @@ public class Navigation
             context += "5._Usage_Statistics";
         }
         return context;
+    }
+
+    // Zuse specifics
+    public String getZuseUrl()
+    {
+        return applicationUrl + ZUSE.getPath() + "/";
     }
 
     /**
