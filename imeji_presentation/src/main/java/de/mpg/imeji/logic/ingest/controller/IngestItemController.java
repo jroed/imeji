@@ -31,7 +31,7 @@ public class IngestItemController
         
         List<Item> itemList = ip.parseItemList(itemListXmlFile);        
          
-       	ItemContentValidator.validate(itemList);
+//       	ItemContentValidator.validate(itemList);
         
         ItemMapper im = new ItemMapper(itemList);   
         

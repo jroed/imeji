@@ -40,6 +40,8 @@ public class MetadataSetContentValidator
 			if(propertyDescriptor.getWriteMethod() == null) continue;
 			
 			if(!notRequiredList.contains(propertyDescriptor.getName())) {
+				System.out.println(propertyDescriptor.getReadMethod().getName());
+				
 				if(metadataSet.getValueFromMethod(propertyDescriptor.getReadMethod().getName()) == null) {
 					throw new Exception(new Throwable("MetadataSet object of Item ("+item.getId().toString()+") has invalid setting for element: " + propertyDescriptor.getName()));					
 				} else {

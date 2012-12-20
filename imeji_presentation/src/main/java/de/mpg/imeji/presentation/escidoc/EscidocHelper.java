@@ -181,6 +181,7 @@ public class EscidocHelper
 						GifDecoder gifDecoder = ImageHelper.checkAnimation(imageStream);
 						if(gifDecoder.getFrameCount()>1)
 						{
+							// TODO: need to check here!
 							scaledImageStream = ImageHelper.scaleAnimation(imageStream, gifDecoder, Integer.parseInt(PropertyReader.getProperty("xsd.resolution.web")));
 						}
 						else
@@ -205,7 +206,10 @@ public class EscidocHelper
 			}
 			catch(Exception e)
 			{
-				url = uploadFileContent(imageStream, mimetype, auth);
+				
+//				url = uploadFileContent(imageStream, mimetype, auth);
+//				e.printStackTrace();
+				url = uploadFileContent(scaledImageStream, mimetype, auth);
 			}
 		}
 		else if(contentCategory.equals(ImageHelper.getOrig()))
